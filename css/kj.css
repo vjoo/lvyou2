@@ -1,0 +1,199 @@
+@charset "UTF-8";
+/* CSS Document */
+.dh-order a {
+    
+    line-height: 40px;
+    
+}
+.dh-order a.on {
+    
+    line-height: 40px;
+     
+}
+.sybtn{clear: both;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+     padding:10px 20px}
+		.ljsybg .jiage{font-size: 20px;}
+		
+		.con{height: 100%;
+display: flex;
+flex-direction: column;
+box-sizing: border-box;
+background-color: #f7f8fa;
+font-family: PingFang SC, 'Helvetica Neue', Arial, sans-serif;
+}
+		.p{display: block;
+position: absolute;
+top: 24px;
+padding: 4px 16px;
+z-index: 1;
+}
+		.name{margin-bottom: 4px;
+font-weight: bold;
+font-size: 14px;
+line-height: 18px;
+text-shadow: 0px 2px 2px #111;
+overflow: hidden;
+word-break: break-all;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+}
+		.valid{font-size: 12px;
+text-shadow: 0px 2px 2px #111;
+overflow: hidden;
+word-break: break-all;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+}
+	 
+		.card__thumb {
+position: relative;
+-webkit-box-flex: 0;
+-webkit-flex: none;
+flex: none;
+
+}
+		.coupon__content {
+display: -webkit-box;
+display: -webkit-flex;
+display: flex;
+-webkit-box-align: center;
+-webkit-align-items: center;
+align-items: center;
+box-sizing: border-box;
+min-height: 84px;
+color: #fff;
+background-color: #fff;
+
+}
+
+.van-coupon {
+margin: 6px 12px;
+overflow: hidden;
+background-color: #fff;
+border-radius: 8px;
+box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+
+}
+.van-coupon__description {
+padding: 8px 16px;
+font-size: 12px;
+
+}
+.van-tag {
+display: -webkit-inline-box;
+display: -webkit-inline-flex;
+display: inline-flex;
+-webkit-box-align: center;
+-webkit-align-items: center;
+align-items: center;
+padding: 4px 16px;
+color: #fff;
+font-size: 14px;
+line-height: normal;
+border-radius: 4px;
+width: 90px;
+height: 30px;
+
+}
+.van-card__tag1 {
+position: absolute;
+top: 0px;
+right: 0px;
+z-index: 1;
+
+}
+		.van-card__tag1 .van-tag--danger {
+background-color: #ee0a24;
+
+}
+		.btn{background-color: #FA8500;
+color: #fff;
+height: 44px;
+line-height: 44px;
+width: 100%;
+text-align: center;
+position: fixed;
+bottom: 0;
+z-index: 10;
+}
+ .van-coupon:first-child{
+margin-top: 12px;
+
+}
+.img{height: 6rem;background-position:left top;background-size: cover}
+
+
+.hy .van-tag{display: inline-flex;
+-webkit-box-align: center;
+-webkit-align-items: center;
+align-items: center;
+padding: 4px 15px;
+color: #fff;
+font-size: 14px;
+line-height: normal;
+border-radius: 0px;
+height: 6rem;
+    width: 65px;
+font-weight: 700;
+}
+
+.hy .van-card__tag1 .van-tag--danger {
+background-color: #FA8500;
+
+}
+.hy .valid,.hy .name {
+padding-right: 70px;
+
+}
+
+.gq{filter: grayscale(100%);
+-webkit-filter: grayscale(100%);
+opacity: 0.8;
+
+}
+.view-title {
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    color: #111;
+}
+.view-ms {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    margin: 8px 10px;
+    white-space: normal;
+}
+.loginkang .weui-cells{background-color: transparent;}
+.loginkang .weui-cells:before{border-top:1px solid rgba(0, 0, 0, 0.26)}
+.loginkang .weui-cell:before{border-top:1px solid rgba(0, 0, 0, 0.26)}
+.loginkang .weui-cells:after{border-bottom:1px solid rgba(0, 0, 0, 0.26)}
+.loginkang .linkk,.loginkang .xiao {color: #504a3e;}
+	
+.hgs .weui-btn_primary:not(.weui-btn_disabled):visited {
+    color: #fff;
+    background-color: #FA6D00;
+}
+
+.weui-btn_primary:not(.weui-btn_disabled):visited {
+    color: #fff;
+}
+.hgs .weui-btn_primary {
+    background-color: #FA6D00;
+}	
+.sybtn{clear: both;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+     padding:10px 20px}
+		.ljsybg .jiage{font-size: 20px;}

@@ -1,0 +1,1173 @@
+/*@charset "utf-8";*/
+/* CSS Document */ 
+/** 
+* MANGOUI组件 
+* By vjoo
+ */
+* {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+* {
+    -webkit-overflow-scrolling: touch;/**让H5滚动流畅**/
+    -webkit-tap-highlight-color: transparent;
+}
+body, input, textarea, button, select {
+    font-family: Helvetica, STHeiti STXihei, Microsoft YaHei, Arial;
+    font-size: 14px;outline:none;
+    background-color: #fff;/*    min-width: 320px;*/
+}
+
+body{margin: 0 auto;}
+/*
+@media screen and (min-width:1280px){
+body{max-width: 750px;margin: 0 auto;}
+}
+*/
+
+
+li, ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color: #3d4145;
+}
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 0px;
+    vertical-align: middle;
+}
+::-webkit-scrollbar {
+ width: 0;
+ height: 0;/**隐藏移动端滚动条**/
+ background-color:transparent;
+ display:none;	
+}
+.weui-toast{font-size: 16px;}
+.icon {
+    fill: currentColor;
+    overflow: hidden;
+}
+.icon.coloriconfont {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 3px;
+}
+.lig .weui-grid {
+    padding-top: 18px;
+    padding-bottom: 14px;
+}
+.jgg .weui-grid__label {
+    color: #b1b1b1;
+    font-size: 12px;/* margin-top: 6px; */
+}
+.we_full_inner {
+    position: relative;
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.weui-tabbar__label {
+    font-size: 12px;
+}
+.weui-grids.jgg {
+    background-color: #fff
+}
+.lik.weui-cells {
+    font-size: 14px;
+}
+.lik.weui-cells:after {
+    border-bottom: 0px;
+}
+.ge4 .weui-grid {
+    width: 25%;
+    text-align: center;
+}
+.jgg .weui-grid {
+    text-align: center;
+}
+.jgg.mub .weui-grid {
+    position: relative;
+    float: left;
+    padding: 10px 10px;
+    width: 33.33333333%;
+    box-sizing: border-box;
+}
+.tbg {
+    padding: 10px;
+}
+.lig i.icon {
+    font-size: 18px;
+    width: 26px;
+    height: 26px;
+    line-height: 27px;
+    color: #fff;
+    background-color: #FF7E00;
+    border-radius: 100%;
+    margin-bottom: 6px
+}
+.dt {
+    background-color: #f1f1f1
+}
+.dt .wz {
+    font-size: 14px;
+    color: #999;
+    padding: 10px 0px;
+}
+.dt .jz {
+    margin: 0 auto;
+    padding: 70px 0px;
+    text-align: center;
+}
+.dt .dticon .icon {
+    font-size: 14px;
+    width: 50px;
+    height: 50px;
+    line-height: 27px;
+    color: #ccc;
+    /* border-radius: 100%;*/
+    margin-bottom: 6px
+}
+.lig .weui-grid:before, .lig .weui-grid:after, .lig .weui-grids:after {
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    width: 0px;
+    height: 0px;
+}
+.pbg {
+    background: #fdc800;
+}
+.pbg.backcolor {
+}
+.pbg.backcolor .icon.coloriconfont, .pbg.backcolor .dlicon, .pbg.backcolor .dlname {
+    color: #4e4e4e
+}
+.pbg.backcolor .dlicon {
+    background-color: #fff
+}
+.jer {
+    font-size: 18px;
+    font-weight: 700;
+}
+.dsss {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;/* padding-bottom: 20px; */
+}
+.tixans {
+    font-size: 16px;/* line-height: 18px; */
+    display: block;/* border-left: 1px solid #e8e8e8; */
+    color: #ffffff;
+    padding: 4px 20px;/* width: 65px; *//* height: 65px; */
+    background-color: #3bd4b2;
+    border-radius: 5px;
+    margin-top: 14px;
+}
+.icon.coloriconfont.huanguan {
+    margin-bottom: 0px;
+    width: 13px;
+    height: 13px;
+    vertical-align: middle;
+    margin-right: 3px;
+    margin-top: -3px;
+}
+.lala {
+    padding: 8px 0px 8px 0px;
+    text-align: left;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: row;
+}
+.lotg {
+    width: 53px;
+    height: 53px;
+    border-radius: 100px;
+    float: left;
+    margin: 0px 15px 0px 15px;
+}
+.lotg img {
+    width: 100%;
+    display: block;
+    border-radius: 48px;/* box-shadow: 0px 1px 4px rgb(255, 134, 47); */
+}
+.dlname {
+    font-size: 16px;
+    line-height: 15px;
+    margin-top: 1px;
+    /* margin-bottom: 2px; */
+    color: #fff;
+    margin-bottom: 4px;
+    width: 150px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 700;
+}
+.dlicon {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    border-radius: 21px;
+    padding: 1px 7px;
+    display: inline-table;
+    clear: both;
+}
+.dlicon.lf {/* background-color: #5a5a5a; */
+}
+.hgicon {
+    background-image: url(../images/hg1.png);
+    background-size: 15px 15px;
+    width: 15px;
+    height: 15px;
+    padding: 0 18px 0px 0px;
+    background-repeat: no-repeat;
+    background-position: 0px -1px;
+}
+/****/
+
+#index .mod-banner {
+    padding: 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    height: 30px
+}
+#index .mod-banner .wave {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 200%;
+    min-width: 2000px;
+    height: 30px;
+    background: url("../images/img/wave.png") repeat-x;
+    z-index: 20;
+    -webkit-animation: wave 8s linear .1s infinite normal;
+    -moz-animation: wave 8s linear .1s infinite normal;
+    animation: wave 8s linear .1s infinite normal;
+}
+#index .mod-banner .wave.wave-2 {
+    margin-left: -218px;
+    -webkit-animation: wave 4s linear .1s infinite normal;
+    -moz-animation: wave 4s linear .1s infinite normal;
+    animation: wave 4s linear .1s infinite normal;
+}
+ @keyframes wave {
+ 0% {
+ left: 0;
+}
+ 99.99% {
+ left: -436px;
+}
+ 100% {
+ left: 0;
+}
+}
+@-webkit-keyframes wave {
+ 0% {
+ left: 0;
+}
+ 99.99% {
+ left: -436px;
+}
+ 100% {
+ left: 0;
+}
+}
+@-moz-keyframes wave {
+ 0% {
+ left: 0;
+}
+ 99.99% {
+ left: -436px;
+}
+ 100% {
+ left: 0;
+}
+}
+/*****/
+.tus {
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-right: 14px;
+    position: absolute;
+    right: 0px;
+    color: #fff
+}
+.mby {
+    padding: 0px 0px 10px 0px;
+}
+.mby .fss {
+    width: 100%;
+    padding: 13px 15px;
+    background-color: #ffffff;
+}
+.mby .b {
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 700;
+    color: #333333;
+}
+.mby .a {
+    display: block;
+    color: #b1b1b1;
+    font-size: 12px;
+}
+.weui-grid:active {
+    background-color: transparent
+}
+/**统用按钮**/
+.mgbt {
+    background-color: #3d4145;
+}
+.mgbt.weui-btn_primary:not(.weui-btn_disabled):active {
+    color: hsla(0,0%,100%,1);
+    background-color: #3d4145
+}
+.tsdds {
+    padding-bottom: 8px;
+    line-height: 24px;
+}
+.ydsjapp {/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#09cbb8+0,009fd9+100 */
+    background: rgb(9,203,184); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(9,203,184,1) 0%, rgba(0,159,217,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(9,203,184,1) 0%, rgba(0,159,217,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(9,203,184,1) 0%, rgba(0,159,217,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#09cbb8', endColorstr='#009fd9', GradientType=0 ); /* IE6-9 */
+}
+/**累计收益**/
+
+.ljsybg {
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 14px;
+}
+.ljsybg .jiage {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 35px;
+}
+.sydh {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.sydh a {
+    display: block;
+    flex: 1;
+    text-align: center;
+    color: #fff;
+    line-height: 34px;
+    font-size: 14px;
+}
+.sydh a p {
+    width: 22px;
+    height: 4px;
+    background-color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    display: none
+}
+.sydh a.on {
+    font-size: 16px;
+    line-height: 30px;
+}
+.sydh a.on p {
+    display: block
+}
+.sysj {
+    background-color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+.sysj .bt, .sytj .bt {
+    font-size: 14px;
+    color: #111;
+}
+.sytj {
+    background-color: #fff;
+    padding: 10px 20px;
+}
+.sytj .bt {
+}
+.huiseb .bt {
+    background-image: url("../images/img/sj.jpg");
+    background-size: contain;
+    background-repeat: no-repeat
+}
+.sysg {
+    background: #fff;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    clear: both;
+    margin-top: 6px;
+}
+.sysg div {
+    flex: 1;
+    text-align: center;
+    color: #fff;
+    padding: 12px 10px 8px 10px;
+    border-radius: 8px;
+    margin: 5px;
+    font-size: 12px;
+}
+.sysg div:first-of-type {
+    margin-left: 0px
+}
+.sysg div:last-of-type {
+    margin-right: 0px;
+}
+.sysg .pddyg {/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4194+0,ff8262+100 */
+    background: rgb(255,65,148); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(255,65,148,1) 0%, rgba(255,130,98,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(255,65,148,1) 0%, rgba(255,130,98,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255,65,148,1) 0%, rgba(255,130,98,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4194', endColorstr='#ff8262', GradientType=1 ); /* IE6-9 */
+}
+.sysg .tbyg {/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff9154+0,ffd257+100 */
+    background: rgb(255,145,84); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(255,145,84,1) 0%, rgba(255,210,87,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(255,145,84,1) 0%, rgba(255,210,87,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255,145,84,1) 0%, rgba(255,210,87,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9154', endColorstr='#ffd257', GradientType=1 ); /* IE6-9 */
+}
+.sysg .jdyg {/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#736efe+0,5ebffc+100 */
+    background: rgb(115,110,254); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(115,110,254,1) 0%, rgba(94,191,252,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(115,110,254,1) 0%, rgba(94,191,252,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(115,110,254,1) 0%, rgba(94,191,252,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#736efe', endColorstr='#5ebffc', GradientType=1 ); /* IE6-9 */
+}
+.parent {
+    display: flex;/*设为伸缩容器*/
+    flex-flow: row;/*伸缩项目单行排列*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.stable {
+    width: 110px;/*固定宽度*/
+}
+.change {
+    flex: 1;/*这里设置为占比1，填充满剩余空间*/
+    margin-left: 12px;
+}
+.sysg p {
+    font-size: 20px;
+}
+.huiseb {
+    font-size: 14px;
+}
+.huiseb .bt {
+    text-align: right;
+    margin-bottom: 15px;
+    background-color: #ebebeb;
+    line-height: 30px;
+    height: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.pddds .weui-progress__bar, .tbdds .weui-progress__bar, .jddds .weui-progress__bar {
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    margin-bottom: 15px;
+    border-radius: 0px 100px 100px 0px
+}
+.pddds .weui-progress__inner-bar, .tbdds .weui-progress__inner-bar, .jddds .weui-progress__inner-bar {
+    border-radius: 0px 100px 100px 0px
+}
+.weui-progress .js_progress span {
+    margin-left: 8px;
+}
+.pddds .weui-progress__inner-bar {/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4194+0,ff8262+100 */
+    background: rgb(255,65,148); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(255,65,148,1) 0%, rgba(255,130,98,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(255,65,148,1) 0%, rgba(255,130,98,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255,65,148,1) 0%, rgba(255,130,98,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4194', endColorstr='#ff8262', GradientType=1 ); /* IE6-9 */
+}
+.tbdds .weui-progress__inner-bar {/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff9154+0,ffd257+100 */
+    background: rgb(255,145,84); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(255,145,84,1) 0%, rgba(255,210,87,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(255,145,84,1) 0%, rgba(255,210,87,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255,145,84,1) 0%, rgba(255,210,87,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9154', endColorstr='#ffd257', GradientType=1 ); /* IE6-9 */
+}
+.jddds .weui-progress__inner-bar {/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#736efe+0,5ebffc+100 */
+    background: rgb(115,110,254); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(115,110,254,1) 0%, rgba(94,191,252,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(115,110,254,1) 0%, rgba(94,191,252,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(115,110,254,1) 0%, rgba(94,191,252,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#736efe', endColorstr='#5ebffc', GradientType=1 ); /* IE6-9 */
+}
+/**订单**/
+
+
+.mangoui-order .weui_media_box {
+    padding: 0px 4px 0px 4px;
+    position: relative;
+    margin: 6px;
+}
+.mangoui-order .weui-media-box_appmsg .weui-media-box__hd img {
+    border-radius: 4px;
+}
+.ddzdy {
+    clear: both;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.mangoui-order .weui-media-box__desc {
+    font-size: 14px;
+    color: #111;
+}
+.ft14 {
+    font-size: 14px;
+}
+.weui-media-box_appmsg {
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+}
+.weui-cell__ft.red {
+    color: #E00003;
+}
+.mangoui-order .weui-panel__bd {
+    background-color: #f5f5f5;
+}
+.ddfr.sq {
+    color: #999;
+}
+.mangoui-order .ddfr {
+    float: right;
+}
+.bddx.ga {
+    padding-top: 10px;
+}
+.mangoui-order .weui_media_box .weui_media_desc {
+    color: #999;
+    font-size: 13px;
+    line-height: 1.2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.mangoui-order .weui_media_desc.bddx {
+    width: 95%;
+    float: left;
+}
+.mangoui-order .weui-panel__hd.tt {
+    padding: 8px 15px 6px 15px;
+}
+.mangoui-order .weui-panel__hd {
+    color: #666;
+}
+.mangoui-order .weui-panel__hd {
+    padding-top: 10px;
+}
+.mangoui-order .liug {
+    padding: 2px 10px;
+    height: 55px;
+}
+.mangoui-order .weui_btn {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 14px;
+    padding-right: 14px;
+    box-sizing: border-box;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    line-height: 2.33333333;
+    border-radius: 5px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    overflow: hidden;
+}
+.mangoui-order .weui_btn_primary.s {
+    background-color: #E00003;
+}
+.mangoui-order .weui_btn_primary.w {
+    background-color: #847757;
+    color: #ffffff;
+}
+.mangoui-order .weui_btn.weui_btn_mini {
+    line-height: 1.9;
+    font-size: 14px;
+    padding: 2px 10px;
+    display: inline-block;
+    margin: 10px 4px;
+}
+.mangoui-order .red {
+    color: #E00003;
+}
+.mangoui-order .weui-cell {
+    padding: 10px 10px 10px 4px;
+}
+.dh-order {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #fff;
+    padding: 4px 0px 0px 0px;
+    position: fixed;
+    top: 0px;
+    z-index: 9999;
+}
+.dh-order a {
+    display: block;
+    flex: 1;
+    text-align: center;
+    color: #777;
+    line-height: 34px;
+    font-size: 14px;
+}
+.dh-order a p {
+    width: 22px;
+    height: 4px;
+    background-color: #fdc800;
+    text-align: center;
+    margin: 0 auto;
+    display: none
+}
+.dh-order a.on {
+    font-size: 14px;
+    line-height: 34px;
+    color: #000
+}
+.dh-order a.on p {
+    display: block
+}
+.dh-order.jg a p {
+    width: 50px;
+}
+.mangoui-order .weui-cell__ft.sx {
+    color: #ccc
+}
+.mangoui-order .weui-cell__ft {
+    color: #999
+}
+.mangoui-order .noborder.weui-panel__hd:after {
+    border-bottom: 0px
+}
+.mangoui-order .weui-panel:after, .mangoui-order .weui-panel:before {
+    border-top: 0px;
+    border-bottom: 0px;
+}
+.mangoui-order .weui-media-box {
+    padding: 10px;
+}
+/**订单选择**/
+.dh-tanc {
+    display: block;
+    position: fixed;
+    top: 42px;
+    z-index: 11;
+    width: 100%;
+    left: 0;
+    right: 0px;
+}
+.dh-tanc .weui-cells {
+    font-size: 14px;
+}
+.dh-tanc .weui-cells .weui-cell {
+    padding: 10px 24px;
+}
+.dh-tanc .mask-diy {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.dh-tanc .weui-cells:after, .dh-tanc .weui-cells:before {
+    border: 0px
+}
+.dh-order .xz {
+    position: relative;
+    width: 66px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    color: #111
+}
+.dh-order .sjsjsj {
+    position: absolute;
+    top: 12px;
+    right: 0;
+    display: none
+}
+.dh-order .xz .sjsjsj {
+    display: block
+}
+.dh-order .icon.coloriconfont {
+    width: 8px;
+    height: 8px;
+}
+.weui-dialog__ft {
+    font-size: 16px;
+}
+/**提现**/
+
+.hhr-ct {
+    text-align: left;
+    width: 100%;
+    margin: 0 auto;
+    padding: 8px 0px 8px 0px;
+    background-color: #c10000;
+    color: #e09b9b;
+    position: relative;
+}
+.hhr-title {
+    font-size: 14px;
+    padding: 10px 0px 0px 15px;
+}
+.hhr-number {
+    font-size: 24px;
+    line-height: 30px;
+    padding: 0px 0px 10px 15px;
+    color: #ffffff;
+}
+.ccczzz .weui-cell {
+    padding: 15px 20px;
+}
+.ccczzz .nav .weui-cells {
+    font-size: 15px;
+    margin-top: 10px;
+}
+.ccczzz .nav .weui-cells:first-of-type {
+    margin-top: 0px;
+}
+.ccczzz .mx {
+    color: #5a9dc7;
+    text-decoration: underline;
+    font-size: 14px;
+    display: block;
+    padding: 0px 10px;
+    text-align: center;
+}
+.weui-form-preview.ppa {
+    margin: 10px 10px 5px 10px;
+    padding: 2px;
+}
+.ppa .weui-form-preview__hd {
+    line-height: 20px;
+}
+.ppa .weui-form-preview__label {
+    font-size: 14px;
+    text-align-last: left;
+    color: #999;
+}
+.ppa .weui-form-preview__label.gg {
+    text-align-last: auto;
+    color: #E00003;
+}
+.ppa .weui-form-preview__bd {
+    line-height: 24px;
+}
+.ppa .baba .weui-form-preview__label {
+    color: #333;
+}
+.ppa .weui-form-preview__hd .weui-form-preview__value {
+    font-style: normal;
+    font-size: 18px;
+    color: #E00003;
+}
+.weui-vcode-btn.tixian {
+    height: inherit;
+    line-height: inherit;
+    font-size: 15px;
+    padding: 0px 0px 0px 10px;
+    color: #3d4145
+}
+.weui-navbar__item.weui-bar__item--on {
+    color: #111
+}
+/**公告diy**/
+.personal-bob {
+    overflow: hidden
+}
+.personal-bob .bob-express-news .bob-news-tit {
+    width: 42px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    background-color: #FBBD00;
+    z-index: 999;
+}
+.personal-bob .bob-express-news .news-list-wrapper {
+    padding: 0 10px 0 42px;
+    height: 30px;
+    overflow: hidden;
+}
+.personal-bob .bob-express-news {
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    position: relative;
+    background-color: #FBBD00;
+}
+.personal-bob .news-item {
+    position: absolute;
+    top: 0;
+    left: 110%;
+    line-height: 30px;
+    color: #fff;
+    display: block;
+    word-break: keep-all;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.personal-bob .bob-news-tit .icon.coloriconfont {
+    width: 40px;
+    height: 18px;
+    color: #fff
+}
+/****/
+.sybtn {
+    float: right;
+    display: block;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 0px 6px;
+    color: #ff9154;
+    margin-top: 2px
+}
+/**我的账单-左右固定，中间自适应布局**/
+ 
+.flex-zzy {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-align: normal;
+    -webkit-align-items: normal;
+    align-items: normal;
+    width: 100%;
+    line-height: 16px;
+    padding: 5px 0px;
+}
+.flex-zzy .flex-zzy-lt {
+    width: 30px;
+    margin-top: 2px;
+}
+.flex-zzy .flex-zzy-mid {
+    width: 100%;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    font-size: 14px;
+}
+.flex-zzy .flex-zzy-rt {
+    width: 60px;
+    text-align: right;
+    color: red;
+}
+.flex-zzy .flex-zzy-mid .title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-size: 15px;
+    color: #111;
+}
+.flex-zzy .flex-zzy-mid .title2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-size: 12px;
+    margin-top: 6px;
+    color: #333;
+}
+.flex-zzy .flex-zzy-mid .time {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-size: 12px;
+    color: #999;
+    margin-top: 4px;
+}
+.flex-zzy .flex-zzy-rt .myb {
+    font-size: 18px;
+    color: #111;
+    margin-top: 0px;
+}
+.flex-zzy .flex-zzy-rt .zt {
+    font-size: 12px;
+    margin-top: 6px;
+    color: #333;
+}
+.flex-zzy .flex-zzy-lt .icon.coloriconfont {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 0px;
+    margin-top: -3px;
+    margin-left: -4px;
+}
+.flex-zzy .flex-zzy-rt .myb.red, .flex-zzy .flex-zzy-rt .zt.red {
+    color: red
+}
+.zd-tat {
+    background-color: #f8f8f8;
+    font-size: 12px;
+    width: 100%;
+    padding: 8px 2px
+}
+.zd-tat .btn {
+    background-color: #fff;
+    min-width: 50px;
+    text-align: center;
+    line-height: 16px;
+    color: #111;
+    padding: 4px 12px;
+    border-radius: 100px;
+    display: block;
+    margin: 4px 0px 0px 10px
+}
+.zd-tat .rt {
+    float: right;
+    padding-right: 10px;
+    color: #b7b7b7;
+    width: 150px;
+    text-align: right
+}
+.zd-tat .rt p {
+    line-height: 15px;
+}
+/**账单详情**/
+.weui-cells.xq {
+    font-size: 14px;
+    margin-top: 0px;
+}
+.weui-cells.xq .weui-cell {
+    padding: 12px 15px
+}
+.weui-cells.xq .weui-cell .weui-cell__bd {
+    color: #999
+}
+.weui-cells.xq .weui-cell .weui-cell__ft {
+    color: #111
+}
+.xqs {
+    background-color: #fff;
+    padding: 35px 20px;
+    text-align: center
+}
+.xqs .jg {
+    font-size: 30px;
+    line-height: 30px;
+    margin: 12px 0px 8px 0px
+}
+.xqs .ly {
+    font-size: 14px;
+    line-height: 14px
+}
+.xqs .mu {
+    font-size: 12px;
+    line-height: 12px;
+    color: #999
+}
+.weui-cells.xq:before {
+    border-top: 0px;
+    height: 0px
+}
+/****/
+
+
+
+/**芒果弹窗**/
+.mgdialog {
+    position: relative;
+}
+.mgdialog-img img {
+    width: 100%;
+    display: block
+}
+.mgdialog-btn {
+    position: absolute;
+    display: block;
+    left: 0px;
+    right: 0px;
+    width: 150px;
+    bottom: 35px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #ffbb00;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700
+}
+.mgdialog-k {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+}
+.mgdialog-btncolos {
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin: 0 auto;
+    text-align: center
+}
+/**弹窗样式2**/
+
+
+.mgdialog .hxbj-stable img {
+    width: 80px;
+    border-radius: 6px;
+    background-color: #fff;
+}
+.mgdialog .hxbj-change .jpicon {
+    margin-top: 0px;
+    padding: 0px 6px;
+}
+.msq.bqbq {
+    background: #09bb07;
+    padding: 2px 8px;
+    font-size: 14px;
+    margin-top: 2px;
+}
+/**个人中心模板2**/
+.sbgimg{}
+.sbgimg .tbg{padding:20px 10px 50px 10px}
+.mby.sbg{
+    padding: 0px;
+    position: relative;
+    width: 100%;
+}
+.mby.sbg .fs{position: absolute;z-index: 10;width: 100%;top: -25px;
+    padding: 0px 20px;}
+.mby.sbg .a {  font-size: 14px;padding:5px 0px;
+    line-height: 14px;float: left}
+.mby.sbg .b {
+    font-size: 14px;
+    line-height: 14px;padding:5px 0px;
+    font-weight:normal;
+    color: #333333;float: left
+}
+.mby.sbg .fss {
+    width: 100%;
+    padding:10px 15px;
+    background-color: #ffffff;border-radius:4px;box-shadow: 0px 1px 10px rgba(0,0,0,0.10);
+}
+.mby.sbg .lig{ position: absolute;width: 100%;display: contents; }
+.mby.sbg .lig .weui-cells{padding-top:22px;}
+
+.mby.sbg .lig .weui-cells .weui-grids:before {
+    right: 0;
+    height: 0px;
+    border-top: 0px solid #d9d9d9;
+    
+}
+
+.mby.sbg .tixans {
+    font-size: 12px;
+    line-height: 12px;
+    display: block;
+    /* border-left: 1px solid #e8e8e8; */
+    color: #ffffff;
+    padding: 6px 20px;
+    /* width: 65px; */
+    /* height: 65px; */
+    background-color: #3bd4b2;
+    border-radius: 100px;
+    margin-top: 0px;
+}
+.sgbcolor{background-color: #fff;padding:10px;}
+
+.sgbcolor .weui-grid:before {
+    top: 0;
+    width: 0px;
+    border-right: 0px solid #d9d9d9;
+ 
+}
+
+.sgbcolor .weui-grid:after {
+    left: 0;
+    height: 0px;
+    border-bottom: 0px solid #d9d9d9;
+  
+}
+
+
+.sgbcolor .weui-grids:before {
+    right: 0;
+    height: 0px;
+    border-top: 0px solid #d9d9d9;  
+}
+.sgbcolor .weui-grids:after {
+    width: 0px;
+    bottom: 0;
+    border-left: 0px solid #d9d9d9;
+}
+
+
+.sgbcolor .jgg .weui-grid__label {
+    color: #333;
+    font-size: 12px;
+    /* margin-top: 6px; */
+}
+
+.sgbcolor  .weui-grid {
+    position: relative;
+    float: left;
+    padding: 10px 10px;   
+    box-sizing: border-box;
+}
+.sgbcolor .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 4px;
+    left: 0;
+    width: 100%;
+}
+.sbgimg .personal-bob .bob-express-news .bob-news-tit{background-color:#333;}
+.sbgimg .personal-bob .bob-express-news{background-color:#333;}
+.sbgimg .lig .lik.weui-cells:before{border-top:0px;}
+
+
+
