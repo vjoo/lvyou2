@@ -221,7 +221,8 @@ opacity: 0.8;
     margin-left: 10px;
     padding-top: 50px;
     }
-	.texgo img{text-align: center;margin: 0 auto;width: 50px;height: 50px;margin: 10px auto;}
+	.texgo img{text-align: center;margin: 10px auto;width: 50px;height: 50px;
+		 }
 	.zzz{margin: 0 auto;
     border-radius: 6px;
     background-color: rgba(255,255,255,0.8);
@@ -231,11 +232,13 @@ opacity: 0.8;
     height: 250px;
     margin-top: 50px;
     margin-left: 10px;}
-.insy{margin: 1.5%;}
+.insy{padding: 10px 0px;}
 .insy .van-coupon{margin: 12px;}
 
 
-
-
+.gzkl{margin:30px 12px 20px 12px;clear: both; background-color: #fff;border-radius: 10px;padding:20px;position: relative}
+.gzbt{position: absolute;top:-10px;left:0;right:0;text-align: center;background-color: #e6201d;  border-radius: 100px; width: 130px;height: 28px;line-height: 28px; margin: 0 auto;font-size: 12px;color: #fff}
+.gznav{padding-top: 10px;line-height:24px;font-size: 14px;}
+.gz2{text-align: center;font-size: 14px;color: #6e952e;padding-bottom: 20px;line-height: 20px;}
 
 
