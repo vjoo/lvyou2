@@ -67,7 +67,7 @@ display: flex;
 -webkit-align-items: center;
 align-items: center;
 box-sizing: border-box;
-min-height: 84px;
+min-height: 120px;
 color: #fff;
 background-color: #fff;
 
@@ -127,7 +127,7 @@ z-index: 10;
 margin-top: 12px;
 
 }
-.img{height: 6rem;background-position:left top;background-size: cover}
+.img{height: 7rem;background-position:left top;background-size: cover}
 
 
 .hy .van-tag{display: inline-flex;
@@ -139,7 +139,7 @@ color: #fff;
 font-size: 14px;
 line-height: normal;
 border-radius: 0px;
-height: 6rem;
+height: 7rem;
     width: 65px;
 font-weight: 700;
 }
