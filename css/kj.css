@@ -26,7 +26,7 @@ font-family: PingFang SC, 'Helvetica Neue', Arial, sans-serif;
 }
 		.p{display: block;
 position: absolute;
-top: 24px;
+bottom: 44px;
 padding: 4px 16px;
 z-index: 1;
 }
@@ -106,7 +106,7 @@ height: 30px;
 position: absolute;
 top: 0px;
 right: 0px;
-z-index: 1;
+z-index: 10;
 
 }
 		.van-card__tag1 .van-tag--danger {
@@ -240,5 +240,9 @@ opacity: 0.8;
 .gzbt{position: absolute;top:-10px;left:0;right:0;text-align: center;background-color: #e6201d;  border-radius: 100px; width: 130px;height: 28px;line-height: 28px; margin: 0 auto;font-size: 12px;color: #fff}
 .gznav{padding-top: 10px;line-height:24px;font-size: 14px;}
 .gz2{text-align: center;font-size: 14px;color: #6e952e;padding-bottom: 20px;line-height: 20px;}
+
+.weui-popup__container{z-index: 9999;}
+.weui-popup__modal{background-color: #fff;padding:0px 20px 20px 20px;}
+
 
 

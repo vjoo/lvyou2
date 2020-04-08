@@ -11,7 +11,8 @@
 <link rel="stylesheet" href="weui/weui.min.css">
 <link rel="stylesheet" href="weui/jquery-weui.min.css">
 <link rel="stylesheet" href="css/mangoui-common.css">
-	<link rel="stylesheet" href="css/personal-common.css">
+<link rel="stylesheet" href="css/view-common.css">  
+<link rel="stylesheet" href="css/personal-common.css">
 <link rel="stylesheet" href="css/kj.css">
 </head>
  
@@ -25,21 +26,88 @@
 	
 	  <div class="weui-tab__bd">
     <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+		 
      <div class="card__thumb van-coupon hy">
 		<div class="coupon__content img" style="background-image: url(images/ff.jpeg);">
    <div class="">
 	   <div class="van-card__tag1">
-	   <div class="van-tag van-tag--danger">立即领取</div></div>
+		   <div class="van-tag van-tag--danger open-popup" data-target="#full">立即使用</div></div>
+	   
+	   
+	   
+	   
+	   <div id="full" class="weui-popup__container"><!--弹出-->
+      <div class="weui-popup__overlay"></div>
+      <div class="weui-popup__modal">
+        <header class="demos-header" style="text-align: center;">
+          <a href="javascript:;" class="close-popup" style="display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;z-index:10;padding:10px;border-radius: 4px;width:40px;height:40px;"><img src="images/img/cos.png" style="width: 100%;"></a>
+	<div class="view-window view-ctrbox">
+	  
+		<div class="texgo" style="display: none">
+			<img src="images/cg.png" alt="">
+			扫码成功，祝你游玩愉快
+		</div>
+		<div class="texoff" style="display: block">门票已过期</div>
+		<div class="zzz"></div>
+	<span class="view-title">门票核验二维码</span>
+	<img style="padding:10px 20px" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1584964593261&di=620ef17d4391f3f7cd26a45e7f659224&imgtype=0&src=http%3A%2F%2Fimg2.imgtn.bdimg.com%2Fit%2Fu%3D3381390367%2C3810581293%26fm%3D214%26gp%3D0.jpg" alt="">
+	<div class="view-ms">请将二维码出示给景区工作人员，扫码核验通过之后即可进入景区。祝您游玩愉快！</div>
+     	</div>
+	
+	 
+        </header>
+        <article class="weui-article" style="border-top:1px #ddd dashed;">
+          <h1>陈武帝故宫</h1>
+          <section>
+            <h2 class="title">章标题</h2>
+            <section>
+              <h3>1.1 节标题</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+              </p>
+              <p>
+                <img src="./images/pic_article.png" alt="">
+                <img src="./images/pic_article.png" alt="">
+              </p>
+            </section>
+            
+          </section>
+        </article>
+      
+      </div>
+    </div>
+	   
+	
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
 	<div class="p">
           <div class="name">陈武帝故宫</div>
-          <div class="valid ">陈武帝故宫原为陈霸先故居,2010年长兴县政府开始着手陈武帝故宫重建项目。景区占地126亩,由陈武帝故居、天居寺</div>
+<!--          <div class="valid ">陈武帝故宫原为陈霸先故居,2010年长兴县政府开始着手陈武帝故宫重建项目。景区占地126亩,由陈武帝故居、天居寺</div>-->
         </div>
 	</div>
 		</div>
 <div class="van-coupon__description">
 			<div>有效期：2020.9.10-10.10</div>	
 		</div>
-		</div>
+		
+		</div>  
 		<div class="card__thumb van-coupon">
 		<div class="coupon__content img" style="background-image: url(images/ff.jpeg);">
    <div class="">
@@ -86,9 +154,17 @@
 <script src="weui/jquery-weui.min.js"></script>
 <!-- 如果使用了某些拓展插件还需要额外的JS -->
 <script src="weui/fastclick.js"></script>
+	<script>
+      $(document).on("open", ".weui-popup-modal", function() {
+        console.log("open popup");
+      }).on("close", ".weui-popup-modal", function() {
+        console.log("close popup");
+      });
+    </script>
 <script>
   $(function() {
     FastClick.attach(document.body);
   });
 </script>
+	   
 </html>
