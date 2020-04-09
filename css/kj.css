@@ -28,7 +28,7 @@ font-family: PingFang SC, 'Helvetica Neue', Arial, sans-serif;
 position: absolute;
 bottom: 44px;
 padding: 4px 16px;
-z-index: 1;
+z-index: 5;
 }
 		.name{margin-bottom: 4px;
 font-weight: bold;
