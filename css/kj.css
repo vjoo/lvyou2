@@ -155,7 +155,7 @@ padding-right: 70px;
 
 .gq{filter: grayscale(100%);
 -webkit-filter: grayscale(100%);
-opacity: 0.8;
+opacity: 1;
 
 }
 .view-title {
@@ -244,5 +244,5 @@ opacity: 0.8;
 .weui-popup__container{z-index: 9999;}
 .weui-popup__modal{background-color: #fff;padding:0px 20px 20px 20px;}
 
-
+ 
 
